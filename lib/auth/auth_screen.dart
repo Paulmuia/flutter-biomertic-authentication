@@ -90,7 +90,7 @@ class _AuthScreenState extends State<AuthScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Biometric Authentication'),
+        title: const Text('Biometric Authentication'),
       ),
       body: Center(
         child: Column(
@@ -119,12 +119,12 @@ class _AuthScreenState extends State<AuthScreen> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image(
+                const Image(
                   width: 200,
                   height: 200,
                   image: AssetImage('assets/f.gif')),
 
-                  ElevatedButton(onPressed: authenticateWithBiometrics, child: Text('authenticate with Face Id'))
+                  ElevatedButton(onPressed: authenticateWithBiometrics, child: const Text('authenticate with Face Id'))
               ],)
 
           ],
